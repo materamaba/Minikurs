@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+<head>
+    <meta charset="utf-8" />
+    <title>Mateusz Koziarski 3L</title>
+    <style>
+        body {
+            font-family: Arial;
+            color: white;
+            background: url(img/bg.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        form{
+            margin-top:10vh;
+            background-color: rgba(0, 0, 0, 0.8);
+            width:80vh;
+            text-align:center;
+        }
+        .pfp {
+    width: 100px;
+    height: 100px;
+    display: inline-block;}
+
+    .zdjecie {
+    width: 100%;
+    text-align: center;
+}
+.zdjecie > label  >img{
+    border-radius:50%;
+    margin: 10px;
+    width:80px;
+    margin-bottom: 0px;
+}
+    </style>
+</head>
+<body>
+    <center>
+        <form>
+            <h1>Utwórz konto</h1>
+            <fieldset>
+                    <legend>Rejestracja</legend>
+                    <div>
+                        <fieldset>
+                            <legend>Login</legend>
+                            <h2>Podaj Login i hasło. Login to nazwa jaką będą widzieli inni użytkowinicy serwisu</h2>
+                            <label>
+                                <input type="text" placeholder="login">
+                                <input type="password" placeholder="hasło">
+                                <input type="password" placeholder="potwierdź hasło"><br>
+                                <input type="checkbox" />zapamiętaj mnie
+                            </label>
+                            <p>hasło powinno się składać przynajmniej z 6 znaków, w tym 1 cyfra i 1 znak specjalny (!@#$%^&*(){}[]\|:";'<>?,./)</p>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Dane kontaktowe</legend>
+                            <h2>Podaj swój mail i numer telefonu</h2>
+                            <p>Pozowli nam to zweryfikować twoją tożsamość, oraz pozwoli na zmianę hasła</p>
+                            <input type="email" placeholder="przykladowymail@witryna.domena" style="width:60%;">
+                            <input type="tel" placeholder="123456789" style="width:60%;">
+                        </fieldset>
+                    </div>
+                    <fieldset>
+                        <legend>zdjęcie profilowe</legend>
+                        <h2>Wybierz jedno z listy lub prześlij własne zdjęcie profilowe.</h2>
+    
+                        <div class="opcje">
+                            <div class="zdjecie">
+    
+                                <label class="pfp">
+                                    <img style="width:80px;" src="img/rejestracja/1.jpg" />
+                                    <center><input type="radio" name="pfp"></center>
+                                </label>
+                                <label class="pfp">
+                                    <img style="width:80px;" src="img/rejestracja/2.png" />
+                                    <center><input type="radio" name="pfp"></center>
+                                </label>
+                                <label class="pfp">
+                                    <img style="width:80px;" src="img/rejestracja/3.png" />
+                                    <center><input type="radio" name="pfp"></center>
+                                </label>
+                                <label class="pfp">
+                                    <img style="width:80px;" src="img/rejestracja/4.png" />
+                                    <center><input type="radio" name="pfp"></center>
+                                </label>
+                                <label class="pfp">
+                                    <img style="width:80px;" src="img/rejestracja/5.png" />
+                                    <center><input type="radio" name="pfp"></center>
+                                </label>
+                                <label class="pfp">
+                                    <img style="width:80px;" src="img/rejestracja/6.png" />
+                                    <center><input type="radio" name="pfp"></center>
+                                </label>
+                                <label class="pfp">
+                                    <img style="width:80px;" src="img/rejestracja/7.png" />
+                                    <center><input type="radio" name="pfp"></center>
+                                </label>
+                                <label class="pfp">
+                                    <img style="width:80px;" src="img/rejestracja/8.jpg" />
+                                    <center><input type="radio" name="pfp"></center>
+                                </label>
+                                <label class="pfp">
+                                    <input type="file" accept="image/*">
+                                    <center><input type="radio" name="pfp"></center>
+                                </label>
+    
+                            </div>
+                        </div>
+                    </fieldset>
+                        <input type="submit">
+                        <input type="reset">
+                        <input type="button" value="sprawdź">
+        </form>
+    </center>
+</body>
+</html>

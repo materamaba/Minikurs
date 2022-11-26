@@ -1,0 +1,625 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body{
+      font-family: "Comic Sans MS", "Comic Sans", cursive;
+      color: white;
+      background-color: rgba(0,0,0,0.3);
+      backdrop-filter: blur(4px);
+    }
+    a{
+      color: white;
+    }
+    article{
+      width: 50%;
+      background-color: rgba(0,0,0,0.5);
+    }
+    img{
+      width: 50%;
+    }
+    fieldset{
+      width: 60%;
+      text-align: left;
+      font-size: 20px;
+    }
+    input{
+      height: 20px;
+    }
+    textarea{
+      background-color: #121212;
+      color: white;
+    }
+    video{
+      width: 70%;
+    }
+    .bababooey>li{
+      height: 50px;
+    }
+    xmp{
+      text-align: center;
+      width: 50%;
+      font-size: 20px;
+      background-color: rgba(0,0,0,0.7);
+    }
+    u{
+      font-size: 20px;
+    }
+  </style>
+</head>
+
+<body>
+    <center>
+   
+    <article> <h2>WITAJ NA MINI-KURSIE CSS3!</h2><br>
+      <h1>Czym jest CSS</h1>
+      <p>CSS (Cascading Style Sheets) jest to język opisujący sposób, w jaki przeglądarki mają wyświetlaćzawartość odpowiednich 
+        elementów HTML. Pozwalają określać rozmiar i kolor czcionki, definiować odstępy i rozmieszczenie tekstu oraz obrazów na 
+        stronie,a pełna lista ich możliwości jest znacznie dłuższa.</p>
+      <h1>Co to kaskadowe arkusze stylów</h1>
+      <p>Kaskadowy arkusz stylów to mechanizm definiujący formatowanie dla danej strony przy zastosowaniu stylów złożonych, 
+        które przeglądarka zinterpretuje w określonym porządku zwanym kaskadą.<br>
+      <br>Definicja stylu może pojawić się w konkretnym elemencie HTML – wówczas mówimy o stylu wpisanym, w obrębie elementu 
+      head strony HTML (to znaczy między znacznikami &lt;head> &lt;/head>) – takie arkusze stylów nazywa się osadzonymi, lub może zostać 
+      pobrana z pliku zewnętrznego – jest to wtedy zewnętrzny lub łączony arkusz stylów. Wszystkie typy arkuszy CSS – wpisane, osadzone 
+      i zewnętrzne – można stosować jednocześnie. Łączone arkusze stylów są przechowywane w zewnętrznym pliku o rozszerzeniu nazwy .css. 
+      Składnia takiego arkusza jest podobna jak w przypadku arkusza osadzonego, a sformatowanie strony wymaga jedynie umieszczenia 
+      połączenia do pliku zawierającego definicję stylu.</p>
+      
+      <fieldset><ul>
+        Spis treści:
+        <li> <a href="#k-h-1">Selektory</a> </li>
+        <li> <a href="#k-h-2">Czcionki</a> </li>
+        <li> <a href="#k-h-3">Tekst</a> </li>
+        <li> <a href="#k-h-4">Tło</a> </li>
+        <li> <a href="#k-h-5">Marginesy</a> </li>
+        <li> <a href="#k-h-6">Obramowanie</a> </li>
+        <li> <a href="#k-h-7">Kursory</a> </li>
+      </ul></fieldset>
+    </article>
+    <br>
+    <img class="centered" src="https://www.nafrontendzie.pl/assets/featured/Depositphotos_117960100_original.jpg" style="width: 40%" />
+   
+    <article> <h2 id="k-h-1">Selectory</h2>
+      Elemnty w CSSie określa się za pomocą selektorów które mogą się odwoływać do różnych elementów kodu HTML<br>
+
+      Selektorem może być:
+      <fieldset><ul>
+        <li>
+          element html np. <b>p</b>
+        </li>
+        <li>
+          id elementu html, np. <b> #header</b>
+        </li>
+        <li>
+          klasa elementu html, np. <b>.klasa</b>
+        </li>
+        <li>
+          uniwersalny <b>*</b>
+        </li>
+        <li>
+          potomka np. <b>p b</b>
+        </li>
+        <li>
+          dziecka np. <b>p > b</b>
+        </li>
+        <li>
+          braci np <b>i + b</b>
+        </li>
+        <li>
+          ogólny selektor braci np. <b>i ~ b</b>
+        </li>
+        <li>
+          grupowanie selektorów np. <b>b, i </b>
+        </li>
+      </ul></fieldset>
+
+      <br>
+      Zapis selektora będzie kompletny, gdy dodamy do niego nawiasy klamrowe {}. W nawiasach klamrowych będziemy dodawać
+      reguły CSS.
+      <br>
+      <xmp>p {}</xmp> 
+      <xmp>#header {}</xmp>
+      <xmp>.klasa {}</xmp>
+    
+      <br>
+
+      Są to selektory bez reguł. Takie reguły zapisujemy w nawiasach {}.
+
+
+      <xmp>p {background-color: blue;}</xmp> 
+      <xmp>#header {background-color: blue;}</xmp> 
+      <xmp>.klasa {background-color: blue;}</xmp> <br>
+
+      Dzięki regułom możemu ustanawiać wybranym (poprzez selektory) elementom wybrane style. Więcej takich regół i ich
+      działanie zobaczycie poniżej. <br>
+
+    </article>
+
+  
+    <article>  <h2 id="k-h-2">Czcionki</h2>
+      CSS daje nam bardzo dużo reguł do modyfikowania wyglądu czcionki:
+      <br>
+      <u>Wielkość czcionki:</u> <br> 
+
+      <xmp>selektor{ font-size: rozmiar }</xmp> <br>
+
+      zamiast wyrazu rozmiar musimy wstawić jedostkę wielkości, do wyboru mamy:
+
+      <br>
+
+      <fieldset><ul>
+        <li>
+          Jednostki długości
+          <ul>
+            <li>
+              em - wysokość aktualnej czcionki
+            </li>
+            <li>
+              ex - wysokość litery "x", czyli małej litery w aktualnej czcionce
+            </li>
+            <li>
+              ch - szerokość cyfry "0" (zero) w aktualnej czcionce (CSS 3 - interpretuje Internet Explorer 9, Firefox)
+            </li>
+            <li>
+              rem - wysokość czcionki elementu korzenia w drzewie dokumentu (CSS 3 - interpretuje Internet Explorer 9,
+              Firefox, Opera, Chrome); w języku HTML korzeniem jest zawsze element <b>&lt;html></b>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          Jednostki procentowe obszaru wyświetlania
+          <ul>
+            <li>vw - procentowa szerokość obszaru wyświetlania (interpretuje Internet Explorer 9, Chrome)</li>
+            <li>vh - procentowa wysokość obszaru wyświetlania (interpretuje Internet Explorer 9, Chrome)</li>
+            <li>vmin - mniejsza z wartości vw lub vh (interpretuje Internet Explorer 10, Chrome)</li>
+            <li>vmax - większa z wartości vw lub vh</li>
+          </ul>
+        </li>
+
+        <li>
+          Jednostki bezwzględne
+          <ul>
+            <li>in - cale (1in = 2.54cm)</li>
+            <li>cm - centymetry</li>
+            <li>mm - milimetry</li>
+            <li>pt - punkty (1pt = 1/72in) - często używane przy definiowaniu rozmiaru czcionki w edytorach tekstu</li>
+            <li>pc - pika (1pc = 12pt)</li>
+            <li>px - piksele (1px = 1/96in)</li>
+          </ul>
+        </li>
+        <li>
+          Procent wielkości bieżącej
+          <ul>
+            np. 150%
+          </ul>
+        </li>
+
+      </ul></fieldset>
+
+
+      <br><br>
+      <u>Rodzaj czionki: </u> <br>
+      <xmp>selektor{ font-family: "rodzaj" }</xmp> <br>
+
+      W miejsce słowa "rodzaj" należy wstawić nazwę wybranej przez nas czcionki<br>
+
+      <br>
+
+      Oprócz podania rodzaju czcionki wprost, możliwe jest także wpisanie rodziny ogólnej: <br>
+<br>
+      <fieldset><ul>
+        <li>serif - czcionka szeryfowa (końcówki znaków posiadają "ozdobniki"), np.: <span style="font-family:'Times New Roman', Times, serif"> 'Times New Roman'</span>, <span style="font-family: Georgia, 'Times New Roman', Times, serif;"> Georgia,</span></li>
+        <li>sans-serif - czcionka bezszeryfowa (końcówki znaków są proste), np.: <span style="font-family:Arial"> Arial,</span><span style="font-family:Verdana, Geneva, Tahoma, sans-serif"> Verdana,</span> </li>
+        <li>monospace - czcionka o stałej szerokości znaków - monotypiczna (wygląda, jak pisana na maszynie), np.:
+          <span style="font-family:'Courier New', Courier, monospace">'Courier New'</span></li>
+        <li>cursive - czcionka mająca pewne cechy pochyłej (wygląda, jak pisana ręcznie)</li>
+        <li>fantasy - czcionka fantazyjna (dekoracyjna)</li>
+      </ul></fieldset> <br>
+      np. <xmp>body { font-family: Arial sans-serif }</xmp>
+
+      <u>Styl czcionki: </u> <br>
+
+      <xmp>selektor { font-style: styl }</xmp>
+
+      Natomiast jako "styl" należy wpisać:
+      <fieldset><ul>
+        <li>normal - czcionka normalna (podstawowa)</li>
+        <li><i>italic</i> - czcionka pochylona (jeżeli niedostępna, automatycznie wybierany jest styl oblique) </li>
+        <li><i>oblique</i> - również czcionka pochylona (podobna jak poprzednio) </li>
+      </ul></fieldset>
+<br>
+
+      <u>Waga czcionki: </u> <br>
+
+      <xmp>selektor { font-weight: waga }</xmp> <br>
+      Natomiast jako "waga" należy wpisać: <br>
+      <fieldset><ul>
+        <li>normal - czcionka normalna (podstawowa)</li>
+        <li>bold - czcionka pogrubiona</li>
+        <li>100, 200, 300, 400 (odpowiednik "normal"), 500, 600, 700 (odpowiednik "bold"), 800, 900 - każdy następny
+          numer wskazuje wagę czcionki przynajmniej tak samo wytłuszczonej jak dla poprzedniej wartości w sekwencji</li>
+        <li>lighter - czcionka mniej wytłuszczona od odziedziczonej lub przypisanej do znacznika (np. typowo znaczniki<br>
+          &lt;b>...&lt;/b><br> oraz <br>&lt;strong>...&lt;/strong><br> mają przypisaną domyślną wagę "bold")</li>
+        <li>bolder - czcionka bardziej wytłuszczona</li>
+      </ul></fieldset>
+
+
+
+    </article>
+
+    
+    <article><h2 id="k-h-3">Teskt</h2>
+      Skoro już ustaliliśmy jaką chcemy czcionkę i jak ma ona dokładnie wyglądać, możemy skupić się na stylizowaniu
+      ogólnie rzecz biorąc tekstu:<br>
+
+      <u>Kolor:</u> <br>
+
+      <xmp>selektor { color: kolor }</xmp> <br>
+
+      Natomiast jako "kolor" należy podać definicję koloru. <br>
+
+      Z racji tego, że kolor można definiować na milion różnych sposobów odsyłam was na gotowy już poradnik: <br>
+      <a href="http://www.kurshtml.edu.pl/css/kolory.html" target="_blank">Definicje kolorów</a> <br>
+
+      przykładowe definicje: <br>
+
+      <xmp>#ff0000</xmp><br>
+      <xmp>rgba(125,255,0,1)</xmp> <br>
+
+      <u>Dekoracja</u> <br>
+
+      <xmp>selektor { text-decoration: dekoracja }</xmp> <br>
+
+      Natomiast jako "dekoracja" należy podać: <br>
+
+      <fieldset><ul>
+        <li>none - bez zmian</li>
+        <li> <u>underline</u> - podkreślenie</li>
+        <li> <s>line-through</s> - przekreślenie</li>
+        <li> <span style="text-decoration: overline;">overline</span> - nadkreślenie</li>
+        <li>blink - migotanie tekstu (tylko Netscape/Mozilla/Firefox i Opera 7)</li>
+      </ul></fieldset>
+
+      <br>
+
+
+      <u>Transformacja</u> <br>
+
+      <xmp>selektor { text-transform: transformacja }</xmp> <br>
+      Natomiast jako "transformacja" należy podać: <br>
+      <fieldset><ul>
+        <li>none - bez zmian</li>
+        <li>capitalize - zamiana pierwszych liter wszystkich wyrazów na wielkie</li>
+        <li>uppercase - zamiana wszystkich liter na wielkie</li>
+        <li>lowercase - zamiana wszystkich liter na małe</li>
+      </ul></fieldset>
+
+
+      <br>
+
+
+      <u>Wyrównanie</u> <br>
+
+      <xmp>selektor { text-align: wyrównanie }</xmp> <br>
+
+      Natomiast jako "wyrównanie" należy podać: <br>
+      <fieldset><ul>
+        <li>left - wyrównanie tekstu do lewego marginesu (domyślnie)</li>
+        <li>right - wyrównanie do prawego marginesu</li>
+        <li>center - do środka (wyśrodkowanie)</li>
+        <li>justify - do obu marginesów jednocześnie (justowanie)</li>
+      </ul></fieldset>
+
+      <br>
+
+
+      <u>Odstęp między literami</u> <br>
+
+      <xmp>selektor { letter-spacing: odstęp }</xmp> <br>
+      Natomiast jako "odstęp" należy podać konkretną wielkość odstępu między poszczególnymi literami używając <a
+        href="http://www.kurshtml.edu.pl/css/dlugosc,jednostki.html" target="_blank" rel="noopener noreferrer">jednostek
+        długości</a> .
+      <br>
+      <br>
+
+
+
+
+    </article>
+
+    
+    <article><h2 id="k-h-4">Tło</h2>
+      Tło jest bardzo ważne dla każdego elementu znajdującego się na stronie. Od niego zależy czy tekst jest widoczny
+      albo czy strona jest przyjemna dla oka, więc bardzo ważne jest nauczyć się je modyfikować za pomocą CSS.
+      <br>
+
+      <u>Kolor</u> <br>
+
+      <xmp>selektor { background-color: kolor }</xmp> <br>
+
+      Natomiast jako "kolor" należy podać <a href="http://www.kurshtml.edu.pl/css/kolory.html" target="_blank">definicje
+        kolorów</a> . Wpisanie "transparent" ustali tło przezroczyste.
+
+      <br>
+
+
+      <u>Tło obrazkowe</u> <br>
+
+      <xmp>selektor { background-image: url(ścieżka dostępu do obrazka) }</xmp> <br>
+
+      Natomiast jako "ścieżka dostępu do obrazka" należy podać miejsce (ścieżkę), gdzie znajduje się obrazek, który
+      chcemy wstawić jako tło. Wpisanie "none" usunie obrazek. <br>
+      UWAGA! Ścieżkę dostępu należy konstruować względem lokalizacji arkusza CSS, a nie względem adresu dokumentu HTML!
+      <br>
+
+
+
+      <br>
+
+
+      <u>Powtarzanie tła obrazkowego</u> <br>
+
+      <xmp>selektor { background-repeat: powtarzanie }</xmp> <br>
+
+      Natomiast jako "powtarzanie" należy wpisać: <br>
+      <fieldset><ul>
+        <li>repeat - powtarzanie tła w obu kierunkach (domyślnie)</li>
+        <li>repeat-x - powtarzanie tła tylko w kierunku poziomym</li>
+        <li>repeat-y - powtarzanie tła tylko w kierunku pionowym</li>
+        <li>no-repeat - brak powtarzania tła (zostanie wyświetlone jako pojedynczy obrazek)</li>
+        <li>space - przestrzeń pomiędzy obrazkami w tle zostanie dobrana w taki sposób, aby żadna grafika nie była
+          przycięta (CSS 3 - MSIE 9, Opera)</li>
+        <li>round - wymiary obrazka w tle zostaną dopasowane w taki sposób, aby żadna grafika nie była przycięta (CSS 3
+          - MSIE 9, Opera)</li>
+      </ul></fieldset> <br>
+
+      Polecenie pozwala zdefiniować sposób powtarzania się obrazka w tle obrazkowym. Normalnie kopie obrazka są
+      ustawiane obok siebie tak, że zajmują cały obszar tła. Ale możliwe jest również zdefiniowanie powtarzania w
+      poziomie czy w pionie lub całkowite zablokowanie.
+
+<br>
+
+      <u>Pozycja tła obrazkowego</u> <br>
+
+      <xmp>selektor { background-position: pozycja }</xmp> <br>
+
+      Natomiast jako "pozycja" należy wpisać: <br>
+      <fieldset><ul>
+        <li>Jedną wartość:<ul>
+            <li>center - obrazek na środku (w centrum)</li>
+            <li>left - obrazek po lewej</li>
+            <li>right - po prawej</li>
+            <li>top - na górze</li>
+            <li>bottom - na dole</li>
+            <li><a href="http://www.kurshtml.edu.pl/css/dlugosc,jednostki.html">jednostka długości</a> - odległość od
+              lewej krawędzi</li>
+          </ul>
+        </li>
+        <li>Dwie wartości (oddzielone spacją):<ul>
+            <li>left top - lewy-górny róg</li>
+            <li>left bottom - lewy-dolny róg</li>
+            <li>right top - prawy-górny róg</li>
+            <li>right bottom - prawy-dolny róg</li>
+            <li><a href="http://www.kurshtml.edu.pl/css/dlugosc,jednostki.html">dwie jednostki długości</a>, z których
+              pierwsza oznacza
+              odległość od lewej krawędzi, a druga - od górnej</li>
+          </ul>
+        </li>
+      </ul></fieldset>
+
+
+      <br>
+
+
+      <u>Zaczepienie tła obrazkowego</u> <br>
+
+      <xmp>selektor { background-attachment: zaczepienie }</xmp> <br>
+
+      Jako "zaczepienie" należy wpisać: <br>
+      <fieldset><ul>
+        <li>scroll- przewijanie tła (domyślnie)</li>
+        <li>fixed- tło nieruchome względem okna przeglądarki</li>
+        <li>local- tło nieruchome względem elementu (jeśli posiada on suwaki), ale przewijane względem okna przeglądarki
+          (CSS 3 - MSIE 8, ale nie 9.0; Firefox)</li>
+      </ul></fieldset>
+      <br>
+
+      <u>Rozmiary tła obrazkowego</u> <br>
+
+      <xmp>selektor { background-size: rozmiary }</xmp> <br>
+      Natomiast jako "rozmiary" należy wpisać: <br>
+      <fieldset><ul>
+        <li>contain - skaluje obrazek, zachowując proporcje, tak aby w całości zmieścił się w tle</li>
+        <li>cover - skaluje obrazek, zachowując proporcje, tak aby pokrył cały obszar tła (część grafiki może być
+          niewidoczna)</li>
+        <li>auto - zachowanie domyślne</li>
+        <li><a href="http://www.kurshtml.edu.pl/css/dlugosc,jednostki.html">długość</a> - obrazek zostanie przeskalowany
+          do podanego wymiaru</li>
+        <li>wartość procentową - obrazek zostanie przeskalowany względem obszaru pozycjonowania tła</li>
+      </ul></fieldset> <br>
+      Podanie dwóch z powyższych wartości (np. "150px 100px") pozwala określić osobno szerokość i wysokość obrazka (skalowanie bez zachowania proporcji - rozciąganie grafiki). Aby przeskalować do wysokości, zachowując jego proporcje, jako szerokość należy podać wartość "auto" (np. "auto 100px").
+      <br>
+    </article>
+
+    
+    <article><h2 id="k-h-5">Marginesy</h2>
+      Marginesy to jedna z najbardziej przydatnych możliwości, którą oferuje nam CSS. Dzięki ustawieniu marginesu możemy tworzyć odstępy w ładny i przystępny sposób jedym atrybutem, a nie używając kilkukrotnie <xmp><br></xmp>.
+
+      <br>
+
+      <u>Górny</u> <br>
+
+      <xmp>selektor { margin-top: rozmiar }</xmp> <br>
+
+
+
+      <u>Dolny</u> <br>
+
+      <xmp>selektor { margin-bottom: rozmiar }</xmp> <br>
+
+
+      <u>Lewy</u> <br>
+
+      <xmp>selektor { margin-left: rozmiar }</xmp> <br>
+
+
+      <u>Prawy</u> <br>
+
+      <xmp>selektor { margin-right: rozmiar }</xmp> <br>
+      We wszystkich powyższych jako "rozmiar" należy podać konkretną wartość w <a href="http://www.kurshtml.edu.pl/css/dlugosc,jednostki.html" target="_blank" rel="noopener noreferrer">jednostkach długości</a>. Wpisanie auto ustali wartość automatyczną.
+
+      <br>
+
+
+      <u>Skrócony zapis marginesów</u> <br>
+
+      1) Ze wszystkich stron równy margines.<br>
+      
+      <xmp>selektor { margin: wartość }</xmp> <br>
+      np. <xmp>selektor { margin: 3px }</xmp>; czyli z każdej strony elementu margines będzie wynosił 3px. <br>
+
+      2) Osobny margines dla góry i dołu, a osobna dla boków. <br>
+
+      <xmp>selektor { margin: wartość wartość }</xmp> <br>
+      np. <xmp>selektor { margin: 5px 3px }</xmp>; czyli 5px marginesu od góry i dołu oraz 3px marginesu po bokach. <br>
+
+      3) Osobny margines dla góry, osobna dla boków oraz osobna dla dołu. <br>
+      <xmp>selektor { margin: wartość wartość wartość }</xmp> <br>
+      np. <xmp>selektor { margin: 1px 2px 3px }</xmp>; czyli 1px marginesu od góry, 2px marginesu po bokach oraz 3px marginesu od dołu.<br>
+
+      4) Osobny margines dla góry, prawego boku, lewego boku i dołu <br>
+      <xmp>selektor { margin: wartość wartość wartość wartość }</xmp> <br>
+      np. <xmp>selektor { margin: 1px 2px 3px 4px }</xmp>; czyli 1px marginesu od góry, 2px marginesu od prawgo boku, 3px marginesu od dołu oraz 4px marginesu od lewego boku.<br>
+
+      Marginesy wypisane powyżej pojawiają się na zewnątrz naszych elementów, jeżeli chcemy nadać elementowi margines wewnętrzny we wszystkich powyższych regółach zamieniamy słowo kluczowe <xmp>margin</xmp> na <xmp>padding</xmp> czyli: <br>
+
+      <xmp>selektor { padding-top: wartość }</xmp> <br>
+      <xmp>selektor { padding-bottom: wartość }</xmp> <br>
+      <xmp>selektor { padding-left: wartość }</xmp> <br>
+      <xmp>selektor { padding-right: wartość }</xmp> <br>
+      Oraz łączony do czterech wartości (zasada działania taka sama): <br>
+      <xmp>selektor { padding: wartość wartość wartość wartość }</xmp>
+      
+     
+
+    </article>
+
+    
+    <article><h2 id="k-h-6">Obramowanie</h2>
+        Aby wyróżnić jakiś element na stronie często używamy obramowanie, poniżej zobaczycie jak usawić je dzięki css: 
+        <br>
+
+  
+        <u>Obramownie górne </u> <br>
+
+        <xmp>selektor { border-top: rozmiar typ kolor }</xmp> <br>
+
+        <u>Obramownie dolne </u> <br>
+
+        <xmp>selektor { border-bottom: rozmiar typ kolor }</xmp> <br>
+
+        <u>Obramownie lewe </u> <br>
+
+        <xmp>selektor { border-left: rozmiar typ kolor }</xmp> <br>
+
+        <u>Obramownie prawe </u> <br>
+
+        <xmp>selektor { border-right: rozmiar typ kolor }</xmp> <br>
+
+        <u>Obramownie ze wszystkich stron </u> <br>
+
+        <xmp>selektor { border: rozmiar typ kolor }</xmp> <br>
+
+        Do wyboru za słowo "rozmiar" mamy: <br>
+        <fieldset><ul>
+          <li>thin - cienkie obramowanie</li>
+          <li>medium - średnie obramowanie</li>
+          <li>thick - grube obramowanie</li>
+          <li>lub konkretną wartość w <a href="http://www.kurshtml.edu.pl/css/dlugosc,jednostki.html" target="_blank" rel="noopener noreferrer">jednostkach długości</a> </li>
+        </ul></fieldset> <br>
+        Natomiast jako "styl" należy wpisać:
+        <fieldset><ul>
+          <li>none - brak obramowania</li>
+          <li>hidden - ukryte obramowanie (nie obsługuje MSIE 4)</li>
+          <li>dashed - linia kreskowa (nie obsługuje MSIE 5)</li>
+          <li>dotted - linia kropkowa (nie obsługuje MSIE 5)</li>
+          <li>solid - linia ciągła</li>
+          <li>double - linia ciągła podwójna</li>
+          <li>groove - "rowek"</li>
+          <li>ridge - "grzbiet"</li>
+          <li>inset - "ramka"</li>
+          <li>outset - "przycisk"</li>
+        </ul></fieldset>
+
+        We wszystkich przypadkach jako "kolor" należy podać  <a href="http://www.kurshtml.edu.pl/css/kolory.html" target="_blank" rel="noopener noreferrer">definicję koloru</a> . <br>
+
+        np. <xmp>p { border: 2px solid black}</xmp> <br>
+
+        <img class="centered item-frame" src="img/Borders.PNG" alt=""> 
+
+    </article>
+
+    
+    
+    <article><h2 id="k-h-7">Kursory</h2>
+      Bardzo ważnym punktem w naszej nauce CSS będzie stylizowanie kursora. Dla każdej strony ważna jest intuicyjność więc zmieniający się kursor w zależności na czym się znajudje to podstawa. Bez tej reguły nie wiedzielibyśmy że możemy edytować jakiś tekst, albo kliknąć jakiś przycisk. Dowiedzcie się jak to się robi: 
+      
+      <xmp>selektor { cursor: rodzaj }</xmp> <br>
+
+      Natomiast "rodzaj" odpowiada za kształt, jaki przybierze wskaźnik myszki, po naprowadzeniu go na dany element. <br>
+
+      Po najechaniu na tekst zobaczycie koncowy efekt: <br>
+      <fieldset><ul>
+          <li style="cursor: alias">alias </li>
+          <li style="cursor: all-scroll">all-scroll </li>
+          <li style="cursor: auto">auto </li>
+          <li style="cursor: cell">cell </li>
+          <li style="cursor: context-menu">context-menu </li>
+          <li style="cursor: col-resize">col-resize </li>
+          <li style="cursor: coliy">coliy </li>
+          <li style="cursor: crosshair">crosshair </li>
+          <li style="cursor: default">default </li>
+          <li style="cursor: e-resize">e-resize </li>
+          <li style="cursor: ew-resize">ew-resize </li>
+          <li style="cursor: grab">grab </li>
+          <li style="cursor: grabbing">grabbing </li>
+          <li style="cursor: helli">helli </li>
+          <li style="cursor: move">move </li>
+          <li style="cursor: n-resize">n-resize </li>
+          <li style="cursor: ne-resize">ne-resize </li>
+          <li style="cursor: nesw-resize">nesw-resize </li>
+          <li style="cursor: ns-resize">ns-resize </li>
+          <li style="cursor: nw-resize">nw-resize </li>
+          <li style="cursor: nwse-resize">nwse-resize </li>
+          <li style="cursor: no-droli">no-droli </li>
+          <li style="cursor: none">none </li>
+          <li style="cursor: not-allowed">not-allowed </li>
+          <li style="cursor: liointer">liointer </li>
+          <li style="cursor: lirogress">lirogress </li>
+          <li style="cursor: row-resize">row-resize </li>
+          <li style="cursor: s-resize">s-resize </li>
+          <li style="cursor: se-resize">se-resize </li>
+          <li style="cursor: sw-resize">sw-resize </li>
+          <li style="cursor: text">text </li>
+          <li style="cursor: url">url </li>
+          <li style="cursor: w-resize">w-resize </li>
+          <li style="cursor: wait">wait </li>
+          <li style="cursor: zoom-in">zoom-in </li>
+          <li style="cursor: zoom-out">zoom-out </li>
+      </ul></fieldset>
+
+
+
+
+
+    </article>
+  </section>
+    </center>
+</body>
+
+</html>

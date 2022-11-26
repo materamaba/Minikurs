@@ -1,0 +1,83 @@
+﻿Ten tekst zapisano z wartościami domyślnymi.<br /><br />
+
+Ten tekst zapisano czcionką typu „Arial” o wielkości 12 pt w kolorze niebieskim.<br /><br />
+
+Ten tekst zapisano czcionką typu „Monotype Corsiva” o wielkości 15 pt kolorem czerwonym.<br /><br />
+
+W tym tekście sformatownym jako czcionka typu „Ttimes New Roman” o wielkości 18 pt w kolorze różowym słowo „wielkość” zostało pogrubione.<br /><br />
+
+W tym tekście sformatowanym jako czcionka typu „Calibri” o wielkości 20 pt słowo „wielkość” zostało podkreślone.<br /><br />
+
+W tym tekście sformatowanym jako czcionka typu „Microsoft Sans Serif” o wielkości 22 pt słowo „wielkość” zostało pochylone.<br /><br />
+
+W tym tekście sformatowanym jako czcionka typu „Courier New” o wielkości 20 pt słowo „wielkość” zostało przekreślone.<br /><br />
+
+Ten tekst został wyświetlony w kolorze zielonym przy pomocy angielskiej nazwy koloru.<br /><br />
+
+Ten tekst został wyświetlony w kolorze czystej zieleni przy pomocy heksadecymalnego kodu koloru.<br /><br />
+
+To jest przykład zastosowania znacznika dla indeksu górnego – dwa do potęgi sześciedziątej czwartej: <br /><br />
+
+To jest przykład zastosowania znacznika dla indeksu dolnego – wzór sumaryczny wody: <br /><br />
+
+
+Ten tekst jest pierwszym punktem listy numerowanej.<br />
+
+Ten tekst jest drugim punktem listy numerowanej.<br />
+
+Ten tekst jest trzecim punktem listy numerowanej.<br />
+
+Ten tekst jest podpunktem a trzeciego punktu listy numerowanej.<br /> 
+
+Ten tekst jest podpunktem b trzeciego punktu listy numerowanej.<br />
+
+Ten tekst jest pierwszym podpunktem (sformatowanym jako kwadrat) listy punktowanej w podpunkcie b trzeciego punktu listy numerowanej.<br />
+
+Ten tekst jest drugim podpunktem (sformatowanym jako kwadrat) listy punktowanej w podpunkcie b trzeciego punktu listy numerowanej.<br />
+
+Ten tekst jest trzecim podpunktem (sformatowanym jako kwadrat) listy punktowanej w podpunkcie b trzeciego punktu listy numerowanej.<br />
+
+Ten tekst jest pierwszym podpunktem (sformatowanym jako okrąg), trzeciego podpunktu listy punktowanej w podpunkcie b trzeciego punktu listy numerowanej.<br />
+
+Ten tekst jest drugim podpunktem (sformatowanym jako okrąg), trzeciego podpunktu listy punktowanej w podpunkcie b trzeciego punktu listy numerowanej.<br />
+
+Ten tekst jest trzecim podpunktem (sformatowanym jako okrąg), trzeciego podpunktu listy punktowanej w podpunkcie b trzeciego punktu listy numerowanej.<br />
+
+Ten tekst jest podpunktem c trzeciego punktu listy numerowanej.<br />
+
+Ten tekst jest czwartym punktem listy numerowanej.<br />
+
+Ten tekst jest piątym punktem listy numerowanej.<br />
+
+Ten tekst jest siódmym punktem drugiej listy numerowanej.<br />
+
+Ten tekst jest ósmym punktem drugiej listy numerowanej.<br /><br />
+
+Ten znacznik jezyka HTML służy jako hiperłącze wewnętrzne do strony o nazwie „Kontakt” zawierającej następujący tekst: To jest strona o nazwie „Kontakt” wywołana za pomocą hiperłącza wewnętrznego.<br /><br />
+
+Ten znacznik jezyka HTML służy jako hiperłącze zewnetrzne do strony o nazwie „www.google.pl”.<br /><br />
+
+Ten znacznik jezyka HTML służy jako hiperłącze wewnetrzne do strony zewnętrznej o nazwie „Lista kolorów alfabetycznie” na polskojęzycznej Wikipedii.<br /><br />
+
+Ten wiersz przy zastosowaniu znacznika HTML jest automatycznie przesuwany po ekranie monitora z prawej strony do lewej.<br /><br />
+
+Użyj odpowiedniego znacznika aby przy zastosowaniu pola tekstowego wieloliniowego podać polecenie umożliwiające wstawienie grafiki (polecenia ma być widoczne na ekranie monitora).<br /><br />
+
+Ten pogrubiony tekst w kolorze brązowym, znajduje się pośrodku ekranu, między dwoma pomarańczowymi liniami o wielkości 4 pt, zajmującymi 68% jego szerokości!
+
+Ten tekst jest ujęty w ramkę!<br /><br />
+
+Użyj odpowiedniego znacznika aby poniższy cytat miał automatycznie dodawany cudzysłów, a imię i nazwisko autora było zapisane kursywą!<br />
+Albert Einstein powiedział:
+Dwie rzeczy nie mają granic: wszechświat i ludzka głupota.<br /><br />
+
+Użyj odpowiednich znaczników aby w poniższych zdaniach określić z jakich języków pochodzą skróty „USA” (angielski) i „m p.p.m.” (polski) oraz rozwinąć skróty „USA” (United States of America) i „m p.p.m.” (metrów pod poziomem morza).<br /><br />
+
+Najludniejszym i najbogatszym oraz trzecim pod względem wielkości stanem USA jest Kalifornia.<br />
+Leżąca na terenie stanu Dolina Śmierci (86 m p.p.m.) jest najniższym punktem w USA.<br /><br />
+
+Uzupełnij zdanie: Każdy znak specjalny zapisany w języku HTML zaczyna się od znaku ..... i kończy się znakiem .....<br /><br />
+
+Podaj trzy dowolne znaki specjalne zapisane w języku HTML (inne niż w podanym przykładzie), podaj ich kod i określ co one oznaczją.<br />
+Przykład:<br />
+&amp;euro; – symbol € (znak Euro)<br />

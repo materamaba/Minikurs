@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+
+<html lang="pl">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css">
+    <script src="Script.js"></script>
+    <title>amq</title>
+<meta property="og:url" content="http://www.amk.pl/">
+</head>
+<body>
+    <div class="start" id="start">
+        <div class="lewo">
+            <button onclick="javascript: guzik(); quiz(); document.getElementById('start').style.display = 'none'; document.getElementById('gierka').style.display = 'unset'; return false ">start</button>
+            <h1 style="font-size:50px;">Na czym polega gra?</h1>
+            <p style="font-size:40px;">Gra polega na zgadnięciu jak największej liczby Piosenek z anime.<br /><span style="color:red; font-size:60px">UWAGA!</span><br />Nazwy trzeba wpisywać poprawnie. Każde słowo musi być zapisane wielką literą. W przeciwnym wypadku odpowiedź nie zostanie zaliczona</p>
+        </div>
+        <div class="prawo">
+            <h1>Ustawienia</h1>
+            <p>Wybierz formy odpowiedzi</p>
+            <form>
+                <label><input type="radio" id="metoda" name="metoda" checked="checked" value="1">pisanie</label>
+                <label><input type="radio" name="metoda" value="0">lista</label>
+            </form>
+        </div>
+    </div>
+    
+    <div id="gierka" class="gierka">
+        <div class="glosnosc"><input type="range" id="poziomglosnosci" value="1" min="0" max="1" step="0.01" onmousemove="zmienglos()" /> <span id="siema"></span>% &nbsp;<p>Poziom Głośności &nbsp; &nbsp;</p></div>
+        <center>
+            <div class="pkt">
+                <span id="pkt">0</span>
+            </div>
+        </center>
+        <center><div class="nazwa" id="nazwa">?</div></center><br />
+        <div class="quiz">
+            <div class="amq" id="amq">
+            </div>
+            <div class="ukrycie" id="ukr">?</div>
+        </div>
+        <div id="odppisanie">
+            <form onsubmit="potw(); return false; ">
+                <input type="text" id="pole" style="width:500px;" onsubmit="return false;">
+                <input type="button" onclick="javascript: potw();" value="Potwiedź" style="width:100px;">
+            </form>
+        </div>
+        <div id="odplista">
+            <select id="lodp">
+                <option value="" disabled selected>-----------------</option>
+                <option value="One Piece">One Piece</option>
+                <option value="Berserk">Berserk</option>
+                <option value="The Seven Deadly Sins">The Seven Deadly Sins</option>
+                <option value="Violet Evergarden">Violet Evergarden</option>
+                <option value="Vinland Saga">Vinland Saga</option>
+                <option value="A Silent Voice">A Silent Voice</option>
+                <option value="Log Horizon">Log Horizon</option>
+                <option value="Gintama">Gintama</option>
+                <option value="Demon Slayer">Demon Slayer</option>
+                <option value="KONOSUBA">KONOSUBA</option>
+                <option value="The Melancholy Of Haruhi Suzumiya">The Melancholy Of Haruhi Suzumiya</option>
+            </select>
+            <input type="button" onclick="javascript: var lodp = document.getElementById('lodp').value; potw();" value="Potwierdź" />
+        </div>
+    </div>
+</body>
+</html>

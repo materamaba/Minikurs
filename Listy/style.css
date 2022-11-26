@@ -1,0 +1,90 @@
+﻿@charset "utf-8";
+@font-face {
+    font-family: "PKP";
+    src: url("DworcowaPKPClassic.otf");
+}
+html {
+    color: #FFF;
+    background-color: #121212;
+    font-size: 17px;
+    font-family: PKP;
+    scroll-behavior: smooth;
+}
+body {
+    align-items: center;
+    margin-top: 0px;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+nav {
+    margin:0;
+    background-color: #242424;
+    width:auto;
+    color: #FFF;
+    text-align:center;
+    justify-content:center;
+    padding:10px;
+}
+nav > a {
+    padding: 5px;
+    text-decoration: none;
+}
+nav > a:hover {
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.back {
+    background-color: red;
+    color: white;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 30px;
+    width: 35px;
+    height: auto;
+    text-align: center;
+    text-decoration: none;
+}
+.back:hover{
+    background-color:#00FF00;
+}
+a {
+    color: #FFF;
+}
+img {
+    width: 100%;
+}
+.center{
+    display:flex
+}
+.zdj {
+    position: relative;
+    text-align:center;
+    width: 400px;
+    height:auto;
+    margin:20px;
+}
+.zdj:hover > img{
+    transition:0.3s;
+    opacity: 0.2;
+    filter: blur(4px);
+}
+.zdj > p{
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -55%);
+    opacity:0;
+}
+.zdj:hover > p{
+    transition:0.3s;
+    opacity:1;
+}
+.grupa {
+    display:flex;
+}
+.opis{
+    border: solid 1px white;
+    text-align:center;
+    padding:40px;
+}

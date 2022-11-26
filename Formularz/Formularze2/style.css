@@ -1,0 +1,114 @@
+﻿html {
+    scroll-behavior: smooth;
+}
+body {
+
+    text-align: center;
+    align-items: center;
+    color: white;
+    background: url(img/bg.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.wstep{
+    height:100vh;
+}
+form {
+    width: 50%;
+    margin:0px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+img{
+    width:50vh;
+}
+.button {
+    border-radius: 4px;
+    background-color: #8080ff;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: auto;
+    transition: 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+.button:hover{
+    background:none;
+    border: solid 1px #8080ff;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+h1{
+    font-size: 50px;
+}
+p{
+    font-size:30px;
+}
+label{
+    font-size:15px;
+    padding:3px;
+}
+span{
+    font-size: 25px;
+}
+legend{
+    font-size: 25px;
+}
+.back {
+        background-color: rgba(0, 0, 0, 0.8);
+        border: 1px solid #FFF;
+        color: white;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        font-size: 30px;
+        width: 35px;
+        height: auto;
+        text-align: center;
+        text-decoration: none;
+    }
+    .nawigacja {
+        display: none;
+        background-color: rgba(0, 0, 0, 0.8);
+        position: fixed;
+        bottom: 55px;
+        right: 20px;
+        width: auto;
+        height: auto;
+        text-align: left;
+        text-decoration: none;
+      }
+          
+      .back:hover + .nawigacja {
+        display: block;
+        color: white;
+      }
+      .nawigacja:hover{
+        display: block;
+        color: white;
+      }
+      a{
+          color: white;
+      }
+.lewo{
+    float: left;
+}
+.flagagora{
+    width: 400px;
+    height: 100px;
+    background-color: white;
+}
+.flagadol{
+    width: 400px;
+    height: 100px;
+    background-color: white;
+}
+select{
+    max-height: 6vh;
+}
+legend{
+    text-align: center;
+}

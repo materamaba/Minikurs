@@ -1,0 +1,424 @@
+﻿<!DOCTYPE html>
+<html lang="pl, jp">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Mateusz Koziarski 3L</title>
+    <script>
+        function zmien() {
+            var vol = document.getElementById("suwak").value;
+            document.getElementById("siema").innerHTML = vol + "km/h";
+        }
+    </script>
+</head>
+
+<body>
+    <div class="wstep">
+        <h1>Quiz na podobieństwo wiedzy</h1>
+        <p>Ten quiz pozwoli ci sprawdzić w ilu % mamy taką samą wiedzę mniej lub bardziej użyteczną. Kategoria dowolna -
+            od kolejnictwa przez muzykę aż do Japońskiego!</p>
+        <a href="#quiz"><input type="button" class="button" value="Sprawdź już teraz!"></a>
+    </div>
+    <center>
+        <form id="quiz">
+            <fieldset><legend style="text-align: center;">Quiz</legend>
+                <fieldset>
+                    <legend id="kolej">Kolejnictwo</legend>
+                    <fieldset>
+                        <legend>Pytanie 1</legend>
+                        <div>
+                            <span>Jak żargonowo nazywa się EZT EN57?</span><br>
+                            <br><img src="./img/EN57.jpg" /><br />
+                            <label><input type="checkbox">Jamnik</label>
+                            <label><input type="checkbox">Żółtek</label>
+                            <label><input type="checkbox">Sputnik</label>
+                            <label><input type="checkbox">Kibel</label>
+                        </div>
+                    </fieldset><br>
+                    <fieldset>
+                        <legend>Pytanie 2</legend>
+                        <div>
+                            <span>Które z tych przystanków na linii kolejowej 81 zostało otwarte 26 czerwca
+                                2015</span><br>
+                            <br><img src="img/SA103.JPG" /><br />
+                            <label><input type="checkbox">Ruda Huta</label>
+                            <label><input type="checkbox">Uhrusk-Przystanek</label>
+                            <label><input type="checkbox">Okuninka Białe</label>
+                            <label><input type="checkbox">Majdan Stuleński</label>
+                        </div>
+                    </fieldset><br>
+                    <fieldset>
+                        <legend>Pytanie 3</legend>
+                        <div>
+                            <span>Skąd zostały sprowadzone te jednostki?</span><br>
+                            <br><img src="img/vt101.jpg" /><br />
+                            <select>
+                                <option selected disabled>Wybierz opcje</option><option disabled>----------</option>
+                                <option>Niemcy</option>
+                                <option>Czechy</option>
+                                <option>Słowacja</option>
+                                <option>Węgry</option>
+                                <option>Jugosławia</option>
+                                <option>Francja</option>
+                            </select>
+                        </div>
+                    </fieldset><br>
+                    <fieldset>
+                        <legend>Pytanie 4</legend>
+                        <div>
+                            <span>Czy pociągiem tego przewoźnika dojedziemy do Krakowa?</span><br>
+                            <br><img src="img/elf.jpg" /><br />
+                            <label><input type="radio" name="10">Tak</label>
+                            <label><input type="radio" name="10">Nie</label>
+                        </div>
+                    </fieldset><br>
+                    <fieldset>
+                        <legend>Pytanie 5</legend>
+                        <div>
+                            <span>Gdzie znajduje się parowozownia Wyrzysko-Bydgoskiej Kolei Powiatowej?</span><br>
+                            <br><img src="img/WKP.jpg" /><br />
+                            <select>
+                                <option selected disabled>Wybierz opcje</option><option disabled>----------</option>
+                                <option>Wyrzysk</option>
+                                <option>Bydgoszcz</option>
+                                <option>Pobórka Wielka</option>
+                                <option>Białośliwie</option>
+                                <option>Piła</option>
+                                <option>Kocik Młyn</option>
+                                <option>Nakło nad Notecią</option>
+                            </select>
+                        </div>
+                    </fieldset><br>
+                    <fieldset>
+                        <legend>Pytanie 6</legend>
+                        <div>
+                            <span>Podaj dokładną datę tzw. "Siekiery Celińskiego"</span><br>
+                            <br><img src="img/DSC00021.jpg"><br><br>
+                            <input type="date">
+                        </div>
+                    </fieldset><br>
+                    <fieldset>
+                        <legend>Pytanie 7</legend>
+                        <div>
+                            <span>Jaka jest największa prędkość na Polskiej kolei</span><br>
+                            <br><img src="img/pendolino.jpg"><br><br />
+                            <input style="width: 70%;" value="0" type="range" id="suwak" min="0" max="250" step="1"
+                                onmousemove="zmien()">
+                            <sapn id="siema">0 km/h</sapn>
+                        </div>
+                    </fieldset><br>
+                </fieldset><br>
+
+                <fieldset>
+                    <legend id="jp">Język Japoński</legend>
+                    <fieldset>
+                        <legend>Pytanie 8</legend>
+                        <div>
+                            <span>Jak czyta się ten znak?</span><br>
+                            <span style="font-size:60px;">あ</span><br>
+                            <label><input type="radio" name="1">Ra</label>
+                            <label><input type="radio" name="1">A</label>
+                            <label><input type="radio" name="1">Su</label>
+                            <label><input type="radio" name="1">Chi</label>
+                        </div>
+                    </fieldset><br>
+                    <fieldset>
+                        <legend>Pytanie 9</legend>
+                        <div>
+                            <span>Zapisz ten znak w romaji</span><br>
+                            <span style="font-size:60px;">き</span><br>
+                            <input type="text">
+                        </div>
+                    </fieldset><br>
+                    <fieldset>
+                        <legend>Pytanie 10</legend>
+                        <div>
+                            <span>Za pomocą jakiego znaku napiszemy sylabę?</span><br>
+                            <span style="font-size:40px;">RU</span><br>
+                            <label><input type="radio" name="6">に</label>
+                            <label><input type="radio" name="6">け</label>
+                            <label><input type="radio" name="6">る</label>
+                            <label><input type="radio" name="6">い</label>
+                        </div>
+                    </fieldset><br>
+                    <fieldset>
+                        <legend>Pytanie 11</legend>
+                        <div>
+                            <span>Jak czyta się to słowo?</span><br>
+                            <span style="font-size:60px;">あおい</span><br>
+                            <label><input type="radio" name="8">Eki</label>
+                            <label><input type="radio" name="8">Uta</label>
+                            <label><input type="radio" name="8">Koe</label>
+                            <label><input type="radio" name="8">Aoi</label>
+                        </div>
+                    </fieldset><br>
+                    <fieldset>
+                        <legend>Pytanie 12</legend>
+                        <div>
+                            <span>Napisz to zdanie za pomocą romaji</span><br>
+                            <span style="font-size:40px;">わたし は とりてつ です。</span><br><br />
+                            <input type="text" style="width: 70%;">
+                        </div>
+                    </fieldset><br>
+                    <fieldset>
+                        <legend>Pytanie 13</legend>
+                        <div>
+                            <span>Który z poniższych znaków kanji oznacza stację kolejową</span><br>
+                            <br><img src="img/kakinoki.jpg"><br><br>
+                            <label><input type="radio" name="23">鯉</label>
+                            <label><input type="radio" name="23">歌</label>
+                            <label><input type="radio" name="23">銀魂</label>
+                            <label><input type="radio" name="23">駅</label>
+                        </div>
+                    </fieldset><br>
+                </fieldset><br>
+                <fieldset>
+                    <legend id="anime">Anime</legend>
+                    <fieldset>
+                        <legend>Pytanie 14</legend>
+                        <div>
+                            <span>Z poniższej listy zaznacz wszyskie tytuły studia Kyoto Animation</span><br>
+                            <label>
+                                <select multiple>
+                                    <option>Golden Kamuy</option>
+                                    <option>Lucky Star</option>
+                                    <option>Spy x Family</option>
+                                    <option>Koe no Katachi</option>
+                                    <option>Belle</option>
+                                    <option>Mirai no Mirai</option>
+                                    <option>Berserk</option>
+                                    <option>K-ON</option>
+                                    <option>Suzumiya Haruhi no Yuuutsu</option>
+                                    <option>Rail Wars!</option>
+                                    <option>Vinland Saga</option>
+                                    <option>Tamako Market</option>
+                                    <option>Violet Evergarden</option>
+                                    <option>Toradora</option>
+                                    <option>Ijiranaide, Nagatoro-san</option>
+                                    <option>One Piece</option>
+                                    <option title="Miłość, gimbaza i kosmiczna faza">Chuunibyou demo Koi ga Shitai!
+                                    </option>
+                                </select>
+                                <br>
+                                <span style="font-size: 15px;">Aby zaznaczyć kilka opcji, przytrzymaj przycisk
+                                    „ctrl”</span>
+                            </label>
+                        </div>
+                    </fieldset><br>
+                    <fieldset>
+                        <legend>Pytanie 15</legend>
+                        <div>
+                            <span>Jak nazywa się ta postać</span><br>
+                            <marquee scrollamount="10"><img src="img/aqua.gif"></marquee>
+                            <input type="text" style="width: 70%;">
+                        </div>
+                    </fieldset><br>
+                </fieldset><br>
+
+                <fieldset>
+                    <legend id="amq">Muzyka z anime</legend>
+                    <fieldset>
+                        <legend>Pytanie 16</legend>
+                        <div>
+                            <span>Z jakiej serii pochodzi ta piosenka?</span><br><br>
+                            <audio controls>
+                                <source src="audio/1.mp3" typeof="audio/mp3" />Wystąpił błąd!
+                            </audio><br /><br>
+                            <label><input type="radio">The Seven Deadly Sins</label>
+                            <label><input type="radio">Koe no Katachi</label>
+                            <label><input type="radio">One Piece</label>
+                            <label><input type="radio">Gintama</label>
+                        </div>
+                    </fieldset><br>
+                    <fieldset>
+                        <legend>Pytanie 17</legend>
+                        <div>
+                            <span>Z jakiej serii pochodzi ta piosenka?</span><br><br>
+                            <audio controls>
+                                <source src="audio/2.mp3" typeof="audio/mp3" />Wystąpił błąd!
+                            </audio><br /><br>
+                            <label><input type="radio">Great Pretender</label>
+                            <label><input type="radio">anohana.</label>
+                            <label><input type="radio">Redo of Healer</label>
+                            <label><input type="radio">Tamako Market</label>
+                        </div>
+                    </fieldset><br>
+                    <fieldset>
+                        <legend>Pytanie 18</legend>
+                        <div>
+                            <span>Kiedy wyszedł pierwszy odcinek serii, z której pochodzi ta piosenka? Podaj odpowiedni
+                                tydzień</span><br><br>
+                            <audio controls>
+                                <source src="audio/3.mp3" typeof="audio/mp3" />Wystąpił błąd!
+                            </audio><br /><br>
+                            <label><input type="week"></label>
+                        </div>
+                    </fieldset><br>
+                    <fieldset>
+                        <legend>Pytanie 19</legend>
+                        <div>
+                            <span>Zaznacz odpowieni rodzaj piosenki i wpisz jej odpowieni numer (np. Opening 1)</span><br>
+                            <video controls>
+                                <source src="wideo/EternalPose.webm" typeof="video/webm" />Wystąpił błąd!
+                            </video><br />
+                            <select>
+                                <option selected disabled>Wybierz opcje</option><option disabled>----------</option>
+                                <option>Opening</option>
+                                <option>Ending</option>
+                            </select>
+                            <label><input type="number"></label>
+                        </div>
+                    </fieldset><br>
+                </fieldset><br>
+
+                <fieldset>
+                    <legend id="muz">Muzyka</legend>
+                    <fieldset>
+                        <legend>Pytanie 20</legend>
+                        <div>
+                            <span>Ile oktaw w dół trzeba przekształcić czystą falę sinusoidalną by uzyskać
+                                subbass?</span><br>
+                            <br><img src="img/sytrus.png"><br>
+                            <label><input type="number" name="4"></label>
+                        </div>
+                    </fieldset><br>
+                    <fieldset>
+                        <legend>Pytanie 21</legend>
+                        <div>
+                            <span>Jaka jest najpopularniejsza piosenka The Dubliners na Spotify?</span><br>
+                            <br><img src="img/The Dubliners.jpg"><br><br />
+                            <label><input type="radio" name="5">The Rocky Road to Dublin</label>
+                            <label><input type="radio" name="5">Whiskey in the Jar</label>
+                            <label><input type="radio" name="5">Molly Malone</label>
+                            <label><input type="radio" name="5">The Wild Rover</label>
+                        </div>
+                    </fieldset><br>
+                    <fieldset>
+                        <legend>Pytanie 22</legend>
+                        <div>
+                            <span>Jak nazywali się główni wokaliści zespołu The Dubliners</span><br>
+                            <br><img src="img/The Dubliners2.jpg"><br><br />
+                            <label><input type="checkbox" name="13">Luke Kelly</label>
+                            <label><input type="checkbox" name="13">Ciarán Bourke</label>
+                            <label><input type="checkbox" name="13">Ronnie Drew</label>
+                            <label><input type="checkbox" name="13">Barney McKenna</label>
+                        </div>
+                    </fieldset><br>
+                    <fieldset>
+                        <legend>Pytanie 23</legend>
+                        <div>
+                            <span>Jaki jest najczęściej spotykane tępo w hip-hopie</span><br>
+                            <br><img src="img/metronom.jpg"><br><br />
+<input type="number"> <span>BPM</span>
+                        </div>
+                    </fieldset><br>
+                </fieldset><br>
+
+                <fieldset>
+                    <legend id="gry">Gry</legend>
+                    <fieldset>
+                        <legend>Pytanie 24</legend>
+                        <div>
+                            <span>Jak Geralt mówił Geralt do Yennefer</span><br>
+                            <br><img src="img/wiedzmin.jpg"><br><br />
+                            <label><input type="radio" name="3">Yenie</label>
+                            <label><input type="radio" name="3">Yenuś</label>
+                            <label><input type="radio" name="3">Yen</label>
+                            <label><input type="radio" name="3">Yenna</label>
+                        </div>
+                    </fieldset><br>
+                    <fieldset>
+                        <legend>Pytanie 25</legend>
+                        <div>
+                            <span>Jak nazwywa postać przywoływana przen Iverna za pomocą umiejętności R?</span><br>
+                            <br><img src="img/6.png" /><br />
+                            <label><input type="radio" name="7">Skalniak</label>
+                            <label><input type="radio" name="7">Tibbers</label>
+                            <label><input type="radio" name="7">Stokrotka</label>
+                            <label><input type="radio" name="7">Leśnik</label>
+                        </div>
+                    </fieldset><br>
+                    <fieldset>
+                        <legend>Pytanie 26</legend>
+                        <div>
+                            <span>Uzupełnij cytat</span><br>
+                            <p style="text-align: left;">Geralt: Co jest w garnku?<br>
+                                Troll: Zupa z elfów i cebuli. Dobra. Chcesz jeść?<br>
+                                Geralt: <select>
+                                    <option selected disabled>Wybierz opcje</option><option disabled>----------</option>
+                                    <option>Nie jestem głodny</option>
+                                    <option>Nie lubię cebuli</option>
+                                    <option>Nie mam ochoty na zupę</option>
+                                    <option>Nie jadam elfów</option>
+                                </select><br>
+                                Troll: Głupiś! Elf z cebulą dobry! Jak pomidor!</p>
+                    </fieldset><br>
+                </fieldset><br>
+
+                <fieldset>
+                    <legend id="geo">Geografia</legend>
+                    <fieldset>
+                        <legend>Pytanie 27</legend>
+                        <div>
+                            <span>Jakie jest najczystsze jezioro na pojezierzu Łęczyńsko-Włodawskim?</span><br>
+                            <br><img src="img/gęś.jpg" /><br />
+                            <label><input type="radio" name="11">Orchowe</label>
+                            <label><input type="radio" name="11">Glinki</label>
+                            <label><input type="radio" name="11">Czarne</label>
+                            <label><input type="radio" name="11">Białe</label>
+                        </div>
+                    </fieldset><br>
+                    <fieldset>
+                        <legend>Pytanie 28</legend>
+                        <div>
+                            <span>Stwórz flagę Warszawy!</span><br><br>
+<div class="lewo">
+    <br>
+    <input type="color" id="gornykolor" onchange="zmiana()"><br>
+    <input type="color" id="dolnykolor" onchange="zmianadol()"><br>
+</div>
+<div class="prawo">
+    <div id="gora" class="flagagora"></div>
+    <div id="dol" class="flagadol"></div>
+</div>
+                        </div>
+                        <script type="text/javascript">
+                            function zmiana() {
+                                var kolorek = document.getElementById('gornykolor').value;
+                                document.getElementById('gora').style.backgroundColor = kolorek;
+                            }
+                            function zmianadol() {
+                                var kolorekd = document.getElementById('dolnykolor').value;
+                                document.getElementById('dol').style.backgroundColor = kolorekd;
+                            }
+                            </script>
+                    </fieldset><br>
+                </fieldset><br>
+
+                
+                <input type="submit" class="button" formaction="mailto:romi@o2.pl" />
+                <input type="reset" class="button" />
+                <input type="button" class="button" value="Sprawdź">
+                <br />
+            </fieldset>
+                <footer style="text-align:center">Mateusz Koziarski 3L copyright &copy;</footer>
+
+        </form>
+        
+    </center>
+    <a class="back">&equiv;</a>
+    <div class="nawigacja">
+        <span>nawigacja</span><br>
+        <a href="#">Powrót na górę</a><br>
+        <a href="#kolej">Kolejnictwo</a><br>
+        <a href="#jp">Język Japoński</a><br>
+        <a href="#anime">Anime</a><br>
+        <a href="#amq">Muzyka z anime</a><br>
+        <a href="#muz">Muzyka</a><br>
+        <a href="#gry">Gry</a><br>
+        <a href="#geo">Geografia</a>
+    </div>
+
+</body>
+
+</html>

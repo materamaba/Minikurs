@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Mateusz Koziarski 3L</title>
+    <script src="./script.js"></script>
+    <script>
+
+    </script>
+    <style>
+        @media screen and (max-height: 768px){
+            iframe{
+                height: 82.5%;
+            }
+        }
+        @media screen and (max-height: 1080px){
+            iframe{
+                height: 88%;
+            }
+        }
+        body{
+            margin-top: -0.5%;
+            background-color: #242424;
+            height: 99.9vh;
+            margin:0px;
+            padding:0px;
+            overflow:hidden;   
+        }
+        a:hover{
+            opacity: 0.5;
+            transition: 0.5s;
+        }
+        a>img{
+            max-width: 15vh;
+        }
+        .back {
+        background-color: rgba(0, 0, 0, 0.8);
+        border: 1px solid #FFF;
+        margin-left: -5%;
+        margin-top: 2vh;
+        position: fixed;
+        color: white;
+        font-size: 30px;
+        width: 35px;
+        height: 35px;
+        text-align: center;
+        text-decoration: none;
+        opacity: 0.2;
+        z-index: 999;
+    }
+    .nawigacja {
+        display: none;
+        backdrop-filter: blur(4px);
+        position: absolute;
+        margin-top: 1vh;
+        height: auto;
+        text-align: left;
+        text-decoration: none;
+        z-index: 999;
+      }
+          
+      .back:hover + .nawigacja {
+        display: block;
+        color: white;
+
+      }
+      .nawigacja:hover{
+        display: block;
+        color: white;
+      }
+      .baner{
+          width:100%;
+          top:0;
+          left:0;
+          align-items: center;
+          box-shadow: 0 0 10px rgb(0,0,1);
+          backdrop-filter: blur(8px);
+          z-index: 999;
+      }
+      iframe{
+        width: 100%;
+        /* height... */
+        
+        position:fixed;
+        top:115px;
+        left:0px;
+        right:0px;
+        z-index:1;
+      }
+
+    </style>
+
+</head>
+<div id="style"><style>body{background-image: url(https://geex.x-kom.pl/wp-content/uploads/2021/10/html-scaled.jpg);background-repeat: no-repeat;background-attachment: fixed;background-size: cover;}</style></div>
+<div class=".bg">
+<body>
+    <div class="baner">
+        <br>
+        <img src="img/html baner.png" style="float: left; height: 100px; margin-top: -2px; z-index: 2;">
+        <center><img src="img/baner.gif"  alt="Baner" title="Mini poradnik HTML – Mateusz Koziarski 3L">
+        <img src="img/css baner.png" style="float: right; height: 100px; margin-top: -2px; z-index: 2;"></center>
+    </div>
+    <a class="back">&equiv;</a>
+    <div class="nawigacja">
+        <a href="home.html#" target="prawa" onclick=" tlo = 'home'; zmiana()">
+            <img src="img/home.png" name="rollover0" border="0" alt="Strona główna" title="Strona główna"></a>
+            
+            <a href="html.html#" target="prawa" onclick=" tlo = 'html'; zmiana()">
+            <img src="img/html.png" name="rollover1" border="0" alt="HTML" title="Mini poradnik HTML"></a>
+            
+            <a href="css.html#" target="prawa" onclick=" tlo = 'css'; zmiana()">
+            <img src="img/css.png" name="rollover2" border="0" alt="CSS" title="Mini poradnik CSS"></a>
+            
+            <a href="Sprawdzian/kartkówka.html" target="prawa" onclick=" tlo = 'spr'; zmiana()">
+            <img src="img/spr.png" name="rollover3" border="0" alt="Sprawdzian" title="Sprawdzian"></a>
+            
+            <a href="Listy/lista.html#" target="prawa"onclick=" tlo = 'listy'; zmiana()">
+            <img src="img/listy.png" name="rollover4" border="0" alt="Listy" title="Listy"></a>
+            
+            <a href="Tabela z kolorami/tabela_kolor.html#" target="prawa"onclick=" tlo = 'tabelaKolorow'; zmiana()">
+            <img src="img/tabela.png" name="rollover5" border="0" alt="Tabela" title="Tabela z kolorami"></a>
+            
+            <a href="Tabele, listy, łącza/index.html#" target="prawa" onclick=" tlo = 'tll'; zmiana()">
+            <img src="img/TABELE.png" name="rollover6" border="0" alt="Tabele, listy, łącza" title="Tabele, listy, łącza"></a>
+            
+            <a href="Formularz/index.html#" target="prawa" onclick=" tlo = 'form'; zmiana()">
+            <img src="img/form.png" name="rollover7" border="0" alt="Formularze" title="Formularze"></a>
+            
+            <a href="Multimedia/index.html#" target="prawa" onclick=" tlo = 'multimedia'; zmiana()">
+            <img src="img/multimedia.png" name="rollover8" border="0" alt="Multimedia" title="Multimedia"></a>
+            
+            <a href="quiz/index.html#" target="prawa" onclick=" tlo = 'tabelaKolorow'; zmiana()">
+               <img src="img/quiz.png" name="rollover8" border="0" alt="quiz title="Quiz"></a>
+            
+            <a href="Ciekawostki/ciekawostki.html" target="prawa" onclick=" tlo = 'ciekawostki'; zmiana()">
+            <img src="img/ciekawostki.png" name="rollover9" border="0" alt="Ciekawostki" title="Ciekawostki"></a>
+            
+            <a href="Linki/linki.html" target="prawa" onclick=" tlo = 'linki'; zmiana()">
+            <img src="img/linki.png" name="rollover10" border="0" alt="Linki" title="Linki"></a>
+            
+            <a href="Kontakt/kontakt.html" target="prawa" onclick=" tlo = 'kontakt'; zmiana()">
+            <img src="img/kontakt.png" name="rollover11" border="0" alt="Kontakt" title="Kontakt"></a>
+
+    </div>
+    <br><br>
+<!--iframe name="prawa" src="home.html" frameborder="0" style="overflow:hidden;height:150%;width:150%" height="150%" width="150%"></iframe-->
+
+<iframe src="home.html" name="prawa" frameborder="0"></iframe>
+</div></body>
+</html>

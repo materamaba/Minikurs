@@ -1,0 +1,43 @@
+body{
+    background-color: #242424;
+    text-align: center;
+    align-items: center;
+    background-attachment:fixed;
+    background-size: cover;
+    background-repeat:no-repeat;
+    text-align:center;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    color: white;
+}
+img{
+    width: 70%;
+}
+div{
+    width: 60%;
+}
+a{
+    color: white;
+}
+li{
+    text-align: left;
+}
+.kod{
+    text-align: left;
+}
+.all{
+    width: 60%;
+    background-color: rgba(0,0,0,0.7 );
+}
+iframe{
+    text-align: center;
+    width: 100%;
+}
+video{
+    width: 90%;
+}
+textarea{
+    background-color: #242424;
+    color: #FFF;
+    width: 100%;
+    height: 60px;
+}

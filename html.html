@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+ <html>
+  <head>
+   <title>Mini poradnik HTML5</title>
+    <meta charset="utf-8">
+    <style>
+      body{
+        margin:0;
+        font-family: "Comic Sans MS", "Comic Sans", cursive;
+        color: white;
+        background-color: rgba(0,0,0,0.3);
+      }
+      a{
+        color: white;
+      }
+      article{
+        width: 50%;
+        background-color: rgba(0,0,0,0.5);
+      }
+      img{
+        width: 50%;
+      }
+      fieldset{
+        width: 60%;
+        text-align: left;
+        font-size: 20px;
+      }
+      input{
+        height: 20px;
+      }
+      textarea{
+        background-color: #121212;
+        color: white;
+      }
+      video{
+        width: 70%;
+      }
+      .bababooey>li{
+        height: 50px;
+      }
+      xmp{
+        text-align: left;
+        width: 50%;
+      }
+    </style>
+  </head>
+ <body>
+   <center>
+     <article>
+       <h1>HTML</h1>
+       <p>HTML (HyperText Markup Language) jest językiem używanym do tworzenia stron internetowych. Jest to także język znaczników, 
+        czyli oprócz głównego tekstu dokument zawiera w sobie informację opisujące go. Te dodatkowe informacje wplotywane są za pomocą znaczników.
+        HTML pozwala opisać strukturę informacji zawartych wewnątrz strony internetowej, nadając znaczenie poszczególnym fragmentom tekstu – formując
+         hiperłącza, akapity, nagłówki, listy – oraz osadza w tekście dokumentu obiekty plikowe np. multimedia bądź elementy baz danych np. interaktywne 
+         formularze danych. Przede wszystkim umożliwia określenie wyglądu dokumentu w przeglądarce internetowej.</p>
+        <h2>Historia HTMLa</h2>
+        <p>W 1980 fizyk Tim Berners-Lee, pracujący dla ośrodka naukowo-badawczego CERN, stworzył prototyp hipertekstowego systemu informacyjnego – ENQUIRE. System
+           wykorzystywano do organizowania i udostępniania dokumentów związanych z badaniami naukowymi. Rewolucyjność pomysłu polegała na tym, że użytkownik, 
+           posługując się odnośnikami, mógł z jednej lokalizacji przeglądać dokumenty fizycznie znajdujące się w innych miejscach na świecie.
+          W 1989 Berners-Lee i inżynier oprogramowania CERN Robert Cailliau przedstawili równolegle dwie propozycje hipertekstowych systemów informacyjnych opartych 
+          na sieci Internet. Oba projekty cechowała podobna funkcjonalność. Rok później opracowali wspólną propozycję zaakceptowaną przez CERN – projekt WorldWideWeb (W3).</p>
+     </article>
+     <article>
+      <h1>Znaczniki HTML</h1>
+          <fieldset>
+<h3>Spis Treści</h3>
+<ul style="text-align: left;" width="20%">
+  <li> <a href="#tekst">Formatowanie Tekstu</a>  </li>
+  <li> <a href="#listy">Listy</a> </li>
+  <li> <a href="#linki">Linki</a>  </li>
+  <li> <a href="#img">Multimedia</a>  </li>
+  <li> <a href="#tab">Tabela</a>  </li>
+  <li> <a href="#input">Input i formularze</a>  </li>
+  <li> <a href="#znak">Znaki specjalne</a>  </li>
+</ul></fieldset></article>
+<article>
+<h1 id="tekst">Formatowanie Tekstu</h1>
+<p>Jak już pewnie wiesz, HTML to głównie tekst. Czasem jednak nie potrzebujemy edytować wszyskich słów w css, tylko pojedyńcze słowo. Wtedy z pomocą przychodzą nam specjalne znaczniki HTML</p>
+&lt;strong><strong>Wyraz pogrubiony</strong>&lt;/strong><br>
+&lt;b><b>Wyraz pogrubiony</b>&lt;/b><br>
+&lt;em><em>Wyraz pochylony</em>&lt;/em><br>
+&lt;i><i>Wyraz pochylony</i>&lt;/i><br>
+&lt;small><small>Wyraz pomniejszony</small>&lt;/small><br>
+&lt;mark><mark>Wyraz podświetlony</mark>&lt;/mark><br>
+&lt;sup>Indeks <sup>górny</sup>&lt;/sup><br>
+&lt;sub>Indeks <sub>dolny</sub>&lt;/sub><br>
+&lt;s><s>Wyraz przekreślony</s>&lt;/s><br>
+&lt;ins><ins>Wyraz podkreślony</ins>&lt;/ins><br>
+&lt;del><del>Wyraz przekreślony</del>&lt;/del><br>
+</article>
+<article>
+  <h1 id="listy">Listy</h1>
+  <p>Listy pozwalają ukazywać tekst w uporządkowanej formie</p>
+  <fieldset>
+  <ol>
+    <li>Tak wygląda lista numerowana</li>
+    <li>Tworzy się je za pomocą znacznika &lt;ol></li>
+    <li>w którym znajduje się zancznik dla pojedyńczego podpunktu &lt;li></li>
+  </ol>
+  <ul>
+    <li>Tak wygląda lista nieuporządkowanaa</li>
+    <li>Tworzy się je za pomocą znacznika &lt;ul></li>
+    <li>w którym znajduje się zancznik dla pojedyńczego podpunktu &lt;li></li>
+  </ul></fieldset>
+</article>
+<article>
+  <h1 id="linki">Linki</h1>
+  <p>link to tekst który po kliknięciu otwiera nową stronę. W HTMLu tworzy się go za pomocą znacznika <b>&lt;a></b> wraz z "href="<i>link</i>"" np.</p><br>
+  &lt;a href="https://www.google.com">Link do Google&lt;/a> daje nam wynik: <a href="https://www.google.com">Link do Google</a>
+  <br><br>
+  <p>Można też stworzyć link za pomocą JavaScript za pomocą dopisku onclick np.</p>
+  &lt;p onclick="window.open('https://www.google.com');">link&lt;/p> da nam wynik:
+  <p onclick="window.open('https://www.google.com');">link</p>
+  <p>Link taki nie jest widoczny jako link, więc normalny użytkownik nie będzie w stanie go znaleźć</p>
+</article>
+<article>
+  <h1 id="img">Multimedia</h1>
+  <h2>Obrazy</h2>
+  <p>Obrazy dodaje sie za pomocą znacznika &lt;img src="" alt="tekst alternatywny"></p>
+  <img src="./img/gęś.JPG"><br>
+  &lt;img src="./img/gęś.JPG" alt="gęś">
+  <p>Do zdjęcia możemy dopisać atrybuty szerokości i wysokości oraz title np.</p>
+  <img src="./img/gęś.JPG" width="500" height="100" alt="gęś" title="zdjęcie gęsi"><br>
+  &lt;img src="./img/gęś.JPG" width="500" height="100" alt="gęś" title="zdjęcie gęsi" >
+  <h2>Filmy</h2>
+  <p>Filmy dodaje za pomocą znacznika &lt;video> oraz &lt;source>.</p>
+  <video>
+    <source src="./img/szyszka outplay.webm">
+  </video>
+  <p>Kod powyższego wideo wygląda następująco:<xmp>
+  <video>
+    <source src="./img/szyszka outplay.webm">
+  </video></xmp></p>
+  <p>Powyższy film jednak nie ma elemntów sterujących, przez co nie możemy go odpalić. Aby takie się ukazały, należy dopisać "controls" do &lt;video></p>
+  <video controls>
+    <source src="./img/szyszka outplay.webm">
+  </video>
+  <p>Kod takiego filmu wygląda następująco:<xmp>
+    <video controls>
+      <source src="./img/szyszka outplay.webm">
+    </video>
+  </xmp></p>
+  <h2>Audio</h2>
+  <p>Pliki dźwiękowe dodajemy bardzo podobnie jak pliki wideo, z tą różnicą że używa się znacznika &lt;audio></p>
+  <audio>
+    <source src="./img/Gangplank.Klasyczny.E1.ogg">
+  </audio>
+  <p>Kod powyższego audio wygląda następująco:<xmp>
+  <audio>
+    <source src="./img/Gangplank.Klasyczny.E1.ogg">
+  </audio></xmp></p>
+  <p>Powyższy plik dźwiękowy jednak nie jest widoczny, przez co nie możemy go odpalić. Aby się ukazał, należy dopisać "controls" do &lt;audio></p>
+  <audio controls>
+    <source src="./img/Gangplank.Klasyczny.E1.ogg">
+  </audio>
+  <p>Kod takiego audio  wygląda następująco:<xmp>
+    <audio controls>
+      <source src="./img/Gangplank.Klasyczny.E1.ogg">
+    </audio>
+  </xmp></p>
+</article>
+<article>
+  <h1 id="tab">Tabele</h1>
+  <p>Tabele tworzy się za pomocą znacznika &lt;table> oraz
+    <fieldset>
+    <ul>
+      <li>&lt;tr&lt;/tr> - znacznik wiersza </li>
+      <li>&lt;td>&lt;/td> - znacznik pojedynczej komórki  </li>
+      <li>&lt;th>&lt;/th> - znacznik komórki nagłówka </li>
+  </ul>
+</fieldset>
+  Można również dodać różne atrybuty np. szerokość, wysokość, grubość ramki.
+  </p>
+  <p>Przykładowa tabela</p>
+
+  <table width=250 height=200 border="1" style="text-align: center">
+    <tr>
+        <th>Imię</th>
+        <th>Nazwisko</th>
+        <th>Wiek</th>
+    </tr>
+    <tr>
+        <td>Jakub</td>
+        <td>Chuptyś</td>
+        <td>23</td>
+    </tr>
+    <tr>
+        <td>Bartek</td>
+        <td>Sitek</td>
+        <td>24</td>
+    </tr>
+</table><br><br>
+<p>Kod tabeli</p>
+<textarea disabled style="width: 60vh; height: 30vh">  <table width=250 height=200 border="1" style="text-align: center">
+  <tr>
+      <th>Imię</th>
+      <th>Nazwisko</th>
+      <th>Wiek</th>
+  </tr>
+  <tr>
+      <td>Jakub</td>
+      <td>Chuptyś</td>
+      <td>23</td>
+  </tr>
+  <tr>
+      <td>Bartek</td>
+      <td>Sitek</td>
+      <td>24</td>
+  </tr>
+</table></textarea>
+<p>Można również scalić poszczególne komórki i wiersze za pomocą rowspan i colspan np.</p>
+<table width=250 height=200 border="1" style="text-align: center">
+  <tr>
+      <th colspan="2">Dane Osobowe</th>
+      <th>Wiek</th>
+  </tr>
+  <tr>
+      <td>Jakub</td>
+      <td>Chuptyś</td>
+      <td rowspan="2">23</td>
+  </tr>
+  <tr>
+      <td>Bartek</td>
+      <td>Sitek</td>
+  </tr>
+</table>
+<p>Tak wygląda Kod powyższej tabeli</p>
+<textarea disabled style="width: 60vh; height: 30vh">
+  <table width=250 height=200 border="1" style="text-align: center">
+    <tr>
+        <th colspan="2">Dane Osobowe</th>
+        <th>Wiek</th>
+    </tr>
+    <tr>
+        <td>Jakub</td>
+        <td>Chuptyś</td>
+        <td rowspan="2">23</td>
+    </tr>
+    <tr>
+        <td>Bartek</td>
+        <td>Sitek</td>
+    </tr>
+  </table>
+</textarea>
+</article>
+<article>
+  <h1 id="input">input i formularze</h1>
+  <p>Input to grupa zaczników pozwalająca wprowadzać dane użytkownikowi. Wporwadza się je za pomocą znacznika &lt;input type="">, gdzie w polu type trzeba wpisać wybrany typ przedstawiony poniżej</p>
+  <div style="display:flex;">
+  <fieldset style="width: 50%;" >
+  Lista typów:
+        <ol class="bababooey">
+            <li> <b>button</b> - przycisk w formularzu</li>
+            <li> <b>checkbox</b> - wielokrotny wybór</li>
+            <li> <b>color</b> - wybór koloru</li>
+            <li> <b>date </b> - wybór daty</li>
+            <li> <b>email </b> - pole email (wymaga znaku "@")</li>
+            <li> <b>file</b> - przesyłanie pliku</li>
+            <li> <b>image</b> - przesyłanie zdjęć</li>
+            <li> <b>month </b> - wybór misiąca</li>
+            <li> <b>number </b> - wpisywanie liczby</li>
+            <li> <b>password</b> - wpisywanie ukrytego hasła</li>
+            <li> <b>radio</b> - jednokrotny wybór</li>
+            <li> <b>range </b> - suwak</li>
+            <li> <b>reset</b> - reset inputów w formularzu</li>
+            <li> <b>submit</b> - zatwierdź</li>
+            <li> <b>tel</b> - pole nr. telefonu</li>
+            <li> <b>text</b> - pole tekstowe</li>
+            <li> <b>time </b> - pole czasu</li>
+            <li> <b>url</b> - pole linku</li>
+            <li> <b>week</b> - pole dnia tygodnia</li>
+        </ol></fieldset>
+        <fieldset style="width: 50%;" >
+          Lista typów:
+                <ol class="bababooey">
+                    <li><input type="button" value="button"></li>
+                    <li> <input type="checkbox"></li>
+                    <li> <input type="color"></li>
+                    <li> <input type="date"></li>
+                    <li> <input type="email"></li>
+                    <li> <input type="file"></li>
+                    <li> <input type="image"></li>
+                    <li> <input type="month"></li>
+                    <li> <input type="number"></li>
+                    <li> <input type="password"></li>
+                    <li> <input type="radio"></li>
+                    <li> <input type="range"></li>
+                    <li> <input type="reset"></li>
+                    <li> <input type="submit"></li>
+                    <li> <input type="tel"></li>
+                    <li> <input type="text"></li>
+                    <li> <input type="time"></li>
+                    <li> <input type="url"></li>
+                    <li> <input type="week"></li>
+                </ol></fieldset></div>
+                <p>aby powstał nam formularz, używamy zancznikaa &lt;form></p>
+</article>
+<article>
+  <h1>Znaki specjalne</h1>
+  <p>Znaki specjalne dodaje się za pomocą specjalnego ciągu znaków poprzedzonych znakiem "&" oraz zakończony znakiem ";"</p>
+  <p>Pełna lista znajduje się <a href="./znaki.html">TUTAJ</a></p>
+</article>
+<br>
+<footer style="text-align:center;">
+  &copy; Mateusz Koziarski 3L
+  </footer>
+</center>
+</body>
+</html>

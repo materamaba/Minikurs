@@ -1,0 +1,194 @@
+﻿<!DOCTYPE html>
+
+<html lang="pl">
+<head>
+    <meta charset="utf-8" />
+    <title>Mateusz Koziarski 3L</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript">
+        function zmiana() {
+            var kolorek = document.getElementById('kolor').value;
+            document.getElementById('body').style.backgroundColor = kolorek;
+            document.getElementById('txt').style.backgroundColor = kolorek;
+            if (kolorek > "#808080") {
+                document.getElementById('body').style.color = 'black';
+                document.getElementById('txt').style.color = 'black';
+            }
+            else {
+                document.getElementById('body').style.color = 'white';
+                document.getElementById('txt').style.color = 'white';
+            }
+        }
+    </script>
+</head>
+<body id="body">
+    <center>
+        <form>
+            <fieldset style="float: right;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    text-align: center;">
+                <legend>Zmiana tła strony</legend>
+                <input type="color" id="kolor" />
+                <input type="button" onclick="javascript: zmiana();" value="zmień motyw">
+            </fieldset><br>
+
+            <h1>Uzupełnij dodatkowe informacje o sobie</h1>
+            
+            <fieldset>
+                <legend>Szczegółowe dane o tobie</legend>
+                <div>
+                    <fieldset>
+                        <span>Jakie są twoje pasje?</span><br><br>
+                        <label><input type="checkbox">Kolejnictwo</label>
+                        <label><input type="checkbox">Filmy i seriale</label>
+                        <label><input type="checkbox">Gry wideo</label>
+                        <label><input type="checkbox">Muzyka</label>
+                        <label><input type="checkbox">Malarstwo</label>
+                        <label><input type="checkbox">Informatyka</label>
+                        <label><input type="checkbox">Kultura Azji</label><br>
+                        <label><input type="checkbox">Harcerstwo</label>
+                        <label><input type="checkbox">Sport</label>
+                        <label><input type="checkbox">Inne</label>
+                    </fieldset><br>
+                    <fieldset>
+                        <span>W jakich województwach spędzasz najwięcej czasu?</span><br><br>
+                        <div>
+                            <p>Aby zaznaczyć więcej opcji przytrzymaj klawisz „Ctrl”</p>
+                            <select multiple="multiple" name="wojewodztwo">
+                                <option>Mazowieckie</option>
+                                <option>Łódzkie</option>
+                                <option>Wielkopolskie</option>
+                                <option>Podlaskie</option>
+                                <option>Lubelskie</option>
+                                <option>Podkarpackie</option>
+                                <option>Małopolskie</option>
+                                <option>Śląskie</option>
+                                <option>Opolskie</option>
+                                <option>Dolnośląskie</option>
+                                <option>Lubuskie</option>
+                                <option>Zachodniopomorskie</option>
+                                <option>Świętokrzyskie</option>
+                                <option>Pomorskie</option>
+                                <option>Warmińsko-Mazurskie</option>
+                                <option>Kujawsko-pomorskie</option>
+                            </select>
+                        </div>
+                    </fieldset><br>
+                </div>
+                <div>
+                    <fieldset>
+                        <legend>Płeć</legend>
+                        <span>Wybierz swoją płeć</span><br><br>
+                        <select>
+                            <option>Wolę nie podawać</option>
+                            <option>Mężczyzna</option>
+                            <option>Kobieta</option>
+                        </select>
+                    </fieldset><br>
+                    <fieldset>
+                        <legend>Wiek</legend>
+                        <span>Podaj swoją datę urodzenia</span><br><br>
+                        <input type="date" />
+                    </fieldset><br>
+                    <fieldset>
+                        <legend>Biogram</legend>
+                        <span>Opis ten będzie widoczny na twoim profilu</span><br><br>
+                        <textarea id="txt" placeholder="opisz krótko siebie" style="background-color:black; width:100%; height: 15vh;"></textarea>
+                    </fieldset><br>
+                    <fieldset>
+                        <legend>Dane osobowe</legend>
+                        <span>Podaj swoje imie, nazwisko i PESEL</span><br><br>
+                        <input type="text" placeholder="Imię" />
+                        <input type="text" placeholder="Nazwisko" />
+                        <input type="number" placeholder="Numer pesel" min="11111111111" max="99999999999" maxlength="11" />
+                    </fieldset><br>
+                </div>
+                <div>
+
+                </div>
+            </fieldset><br>
+            <fieldset>
+                <legend>Twój sprzęt</legend>
+                <fieldset>
+                    <legend>System Operacyjny</legend>
+                    <span>Z jakiego systemu operacyjnego aktualnie korzystasz?</span><br><br>
+                    <label>
+                        <input type="radio" name="k">Windows
+                        <input type="radio" name="k">Linux
+                        <input type="radio" name="k">MacOS
+                        <input type="radio" name="k">IOS
+                        <input type="radio" name="k">Android
+                        <input type="radio" name="k">Inny
+                    </label>
+                </fieldset><br>
+                <fieldset>
+                    <legend>Twój procesor</legend>
+                    <span>Wybierz firmę jakiej masz procesor</span><br><br>
+                    <select>
+                        <option>nie wiem</option>
+                        <option>Intel</option>
+                        <option>AMD</option>
+                        <option>Snapdragon</option>
+                        <option>Mediatek</option>
+                        <option>Inny</option>
+                    </select>
+                </fieldset><br>
+                <fieldset>
+                    <legend>Programy</legend>
+                    <span>Zaznacz najczęśiej wykorzystywane przez ciebie programy</span><br><br>
+                    <div>
+                        <p>Aby zaznaczyć więcej opcji przytrzymaj klawisz „Ctrl”</p>
+                        <select multiple="multiple">
+                            <option>Pakiet Office Microsoft</option>
+                            <option>Libre office</option>
+                            <option>Open Office</option>
+                            <option>Gimp</option>
+                            <option>Paint</option>
+                            <option>Pakiet Adobee</option>
+                            <option>FL Studio</option>
+                            <option>Ableton</option>
+                            <option>Pro Tools</option>
+                            <option>Sony Vegas</option>
+                            <option>Da Vinci Resolve</option>
+                            <option>Hitfilm express</option>
+                            <option>Shortcut</option>
+                            <option>Visual Studio</option>
+                        </select>
+                    </div>
+                </fieldset><br>
+                <fieldset>
+                    <legend>Urządzenia</legend>
+                    <span>Zaznacz z jakich urządzeń korzystasz?</span><br><br>
+                    <div>
+                        <p>Aby zaznaczyć więcej opcji przytrzymaj klawisz „Ctrl”</p>
+                        <select multiple="multiple">
+                            <option>Laptop</option>
+                            <option>Komputer PC</option>
+                            <option>Smartphone</option>
+                            <option>Tablet</option>
+                            <option>czytnik e-book</option>
+                            <option>Konsola do gier</option>
+                            <option>Odtwarzacz mp3</option>
+                        </select>
+                    </div>
+                </fieldset><br>
+            </fieldset><br>
+
+            <div style="display:flex; justify-content:center;">
+
+                <fieldset>
+                    <legend>Wykonaj operację</legend>
+                    <input type="submit" value="Wyślij" onclick="alert('Pomyślnie założono konto');" formaction="./index.html" />
+                    <input type="reset" value="Wyczyść">
+                    <input type="button" value="Sprawdź">
+                </fieldset><br>
+            </div>
+            <br />
+            <footer style="text-align:center">Mateusz Kozaiarski 3L copyright &copy;</footer>
+
+        </form>
+    </center>
+</body>
+</html>

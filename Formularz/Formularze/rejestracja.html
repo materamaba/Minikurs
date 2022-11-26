@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+<head>
+    <meta charset="utf-8" />
+    <title>Mateusz Koziarski 3L</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript">
+        function zmiana() {
+            var kolorek = document.getElementById('kolor').value;
+            document.getElementById('body').style.backgroundColor = kolorek;
+            document.getElementById('txt').style.backgroundColor = kolorek;
+            if (kolorek > "#808080") {
+                document.getElementById('body').style.color = 'black';
+                document.getElementById('txt').style.color = 'black';
+            }
+            else {
+                document.getElementById('body').style.color = 'white';
+                document.getElementById('txt').style.color = 'white';
+            }
+        }
+    </script>
+</head>
+<body id="body">
+    <center>
+        <form>
+            <fieldset style="float: right;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    text-align: center;">
+                <legend>Zmiana tła strony</legend>
+                <input type="color" id="kolor" />
+                <input type="button" onclick="javascript: zmiana();" value="zmień motyw">
+            </fieldset>
+
+            <h1>Utwórz konto</h1>
+            <fieldset>
+                <legend>Rejestracja</legend>
+                <div>
+                    <fieldset>
+                        <legend>Login</legend>
+                        <span>Podaj Login i hasło. Login to nazwa jaką będą widzieli inni użytkowinicy serwisu</span><br><br>
+                        <label>
+                            <input type="text" placeholder="login">
+                            <input type="password" placeholder="hasło">
+                            <input type="password" placeholder="potwierdź hasło"><br>
+                            <input type="checkbox" />zapamiętaj mnie
+                        </label>
+                        <p>hasło powinno się składać przynajmniej z 6 znaków, w tym 1 cyfra i 1 znak specjalny (!@#$%^&*(){}[]\|:";'<>?,./)</p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Dane kontaktowe</legend>
+                        <span>Podaj swój mail i numer telefonu</span><br><br>
+                        <p>Pozowli nam to zweryfikować twoją tożsamość, oraz pozwoli na zmianę hasła</p>
+                        <input type="email" placeholder="przykladowymail@witryna.domena" style="width:60%;">
+                        <input type="tel" placeholder="123456789" style="width:60%;">
+                    </fieldset>
+                </div>
+                <fieldset>
+                    <legend>zdjęcie profilowe</legend>
+                    <span>Wybierz jedno z listy lub prześlij własne zdjęcie profilowe.</span><br><br>
+
+                    <div class="opcje">
+                        <div class="zdjecie">
+
+                            <label class="pfp">
+                                <img style="width:80px;" src="./img/1.jpg" />
+                                <center><input type="radio" name="pfp"></center>
+                            </label>
+                            <label class="pfp">
+                                <img style="width:80px;" src="./img/2.png" />
+                                <center><input type="radio" name="pfp"></center>
+                            </label>
+                            <label class="pfp">
+                                <img style="width:80px;" src="./img/3.png" />
+                                <center><input type="radio" name="pfp"></center>
+                            </label>
+                            <label class="pfp">
+                                <img style="width:80px;" src="./img/4.png" />
+                                <center><input type="radio" name="pfp"></center>
+                            </label>
+                            <label class="pfp">
+                                <img style="width:80px;" src="./img/5.png" />
+                                <center><input type="radio" name="pfp"></center>
+                            </label>
+                            <label class="pfp">
+                                <img style="width:80px;" src="./img/6.png" />
+                                <center><input type="radio" name="pfp"></center>
+                            </label>
+                            <label class="pfp">
+                                <img style="width:80px;" src="./img/7.png" />
+                                <center><input type="radio" name="pfp"></center>
+                            </label>
+                            <label class="pfp">
+                                <img style="width:80px;" src="./img/8.jpg" />
+                                <center><input type="radio" name="pfp"></center>
+                            </label>
+                            <label class="pfp">
+                                <input type="file" accept="image/*">
+                                <center><input type="radio" name="pfp"></center>
+                            </label>
+
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Wykonaj operację</legend>
+                    <input type="submit" value="Wyślij" onclick="alert('Pomyślnie założono konto');" formaction="./index.html" />
+                    <input type="reset" value="Wyczyść">
+                    <input type="button" value="Sprawdź">
+                </fieldset><br>
+            </fieldset>
+            <br />
+            <footer style="text-align:center">Mateusz Kozaiarski 3L copyright &copy;</footer>
+
+        </form>
+</body>

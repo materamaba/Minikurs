@@ -1,0 +1,46 @@
+﻿body{
+background-color:black;
+ color:white;
+ font-family:arial;
+}
+form{
+    width: 50%;
+}
+.logowanie{
+    display:inline-flex;
+    width:100%;
+}
+.zdjecie {
+    width: 100%;
+    text-align: center;
+}
+.zdjecie > label  >img{
+    border-radius:50%;
+    margin: 10px;
+    width:80px;
+}
+.opcje{
+    display:flex;
+}
+legend{
+    font-size:20px;
+}
+.pfp {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+div#wrapper {
+    width: 100%;
+    text-align: center;
+}
+span{
+    font-size: 30px;
+}
+legend{
+    font-size: 25px;
+}
+select{
+    max-height: 6vh;
+}
